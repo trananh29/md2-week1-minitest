@@ -22,8 +22,20 @@ public class Student {
     public void setClas(String newClas) {
         this.clas=newClas;
     }
-    Student newStudent= new Student();
-    Scanner sc=new Scanner();
-    newStuden
+
+    public static void main(String[] args) {
+        Student newStuden1= new Student();
+        Scanner sc =new Scanner(System.in);
+        System.out.println("input Name");
+        newStuden1.setName(sc.nextLine());
+        System.out.println("input Age");
+        newStuden1.setAge(sc.nextInt());
+        System.out.println("input Class");
+        newStuden1.setClas(sc.nextLine());
+        System.out.println("the person is");
+
+        System.out.println(newStuden1.getName()+ newStuden1.getClas()+newStuden1.getAge());
+    }
+
 }
 
